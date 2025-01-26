@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio de Airton</title>
     <link rel="shortcut icon" href="/img/do-utilizador.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <link rel="stylesheet" href="styles.css">
 
     <!-- Google tag (gtag.js) -->
@@ -16,8 +17,6 @@
     
       gtag('config', 'G-8S7C1HMNSB');
     </script>
-
-
 </head>
 <body>
     <header>
@@ -37,9 +36,15 @@
             <img src="/img/airton.jpeg" alt="Airton" class="about-image">
             <div class="about-info">
                 <p>Olá! Meu nome é Airton. Atualmente, estou estudando Informática para Internet no Instituto Federal de Alagoas, onde também trabalho com DTI na reitoria.</p>
-                <p>Tenho uma grande paixão por desenvolvimento web e estou especialmente interessado em me especializar como backend developer. Acredito que um backend robusto é essencial para criar aplicações eficazes e eficientes.</p>
-                <p>Além dos estudos e trabalho, gosto de explorar novas tecnologias e projetos pessoais. Estou sempre em busca de aprender mais e melhorar minhas habilidades.</p>
-                <a href="/donwloads/Currículo Airton José dos Santos.pdf" download class="resume-button">Baixar Currículo</a>
+                <p>Tenho uma grande paixão por desenvolvimento web e backend. As tecnologias que utilizo incluem:</p>
+                <ul class="skills">
+                    <li>JavaScript <i class="devicon-javascript-plain colored"></i></li>
+                    <li>React Native <i class="devicon-react-original colored"></i></li>
+                    <li>Node.js <i class="devicon-nodejs-plain colored"></i></li>
+                    <li>HTML <i class="devicon-html5-plain colored"></i></li>
+                    <li>CSS <i class="devicon-css3-plain colored"></i></li>
+                </ul>
+                <a href="/donwloads/Currículo Airton José dos Santos.pdf" download class="button">Baixar Currículo</a>
             </div>
         </div>
     </section>
@@ -47,15 +52,13 @@
     <section id="projects">
         <h2>Projetos</h2>
         <div class="project-container">
-            <!-- Exemplo de projeto -->
             <div class="project">
                 <img src="/img/Projetos.gif" alt="Descrição do Projeto">
                 <div class="project-info">
                     <h3>Projetos</h3>
-                    <button onclick="window.location.href='https://github.com/Airton-Santos?tab=repositories'">Ver Projetos</button>
+                    <button class="button" onclick="window.location.href='https://github.com/Airton-Santos?tab=repositories'">Ver Projetos</button>
                 </div>
             </div>
-            <!-- Adicione mais projetos aqui -->
         </div>
     </section>
 
@@ -63,16 +66,16 @@
         <h2>Contato</h2>
         <div class="contact-container">
             <div class="contact-item">
-                <button onclick="window.location.href='https://github.com/Airton-Santos'">GitHub</button>
+                <button class="button" onclick="window.location.href='https://github.com/Airton-Santos'">GitHub</button>
             </div>
             <div class="contact-item">
-                <button onclick="window.location.href='mailto:santosairton31508@gmail.com'">E-mail</button>
+                <button class="button" onclick="window.location.href='mailto:santosairton31508@gmail.com'">E-mail</button>
             </div>
             <div class="contact-item">
-                <button onclick="window.location.href='tel:+5582987100763'">Telefone</button>
+                <button class="button" onclick="window.location.href='tel:+5582987100763'">Telefone</button>
             </div>
             <div class="contact-item">
-                <button onclick="window.location.href='https://wa.me/5582987100763'">WhatsApp</button>
+                <button class="button" onclick="window.location.href='https://wa.me/5582987100763'">WhatsApp</button>
             </div>
         </div>
     </section>
