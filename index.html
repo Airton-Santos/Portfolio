@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio de Airton - Desenvolvedor Web e Backend com experiência em JavaScript, React Native, Node.js, HTML e CSS.">
     <title>Portfólio de Airton</title>
     <link rel="shortcut icon" href="/img/do-utilizador.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <link rel="stylesheet" href="styles.css">
-
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-8S7C1HMNSB"></script>
     <script>
@@ -23,33 +23,84 @@
         <h1>Portfólio</h1>
         <nav>
             <ul>
-                <li><a href="#about">Sobre Mim</a></li>
-                <li><a href="#projects">Projetos</a></li>
-                <li><a href="#contact">Contato</a></li>
+                <li><a href="#" data-section="about">Sobre Mim</a></li>
+                <li><a href="#" data-section="services">Serviços</a></li>
+                <li><a href="#" data-section="projects">Projetos</a></li>
+                <li><a href="#" data-section="contact">Contato</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="about">
-        <h2>Sobre Mim</h2>
-        <div class="about-container">
-            <img src="/img/airton.jpeg" alt="Airton" class="about-image">
-            <div class="about-info">
-                <p>Olá! Meu nome é Airton. Atualmente, estou estudando Informática para Internet no Instituto Federal de Alagoas, onde também trabalho com DTI na reitoria.</p>
-                <p>Tenho uma grande paixão por desenvolvimento web e backend. As tecnologias que utilizo incluem:</p>
-                <ul class="skills">
-                    <li>JavaScript <i class="devicon-javascript-plain colored"></i></li>
-                    <li>React Native <i class="devicon-react-original colored"></i></li>
-                    <li>Node.js <i class="devicon-nodejs-plain colored"></i></li>
-                    <li>HTML <i class="devicon-html5-plain colored"></i></li>
-                    <li>CSS <i class="devicon-css3-plain colored"></i></li>
-                </ul>
-                <a href="/donwloads/Currículo Airton José dos Santos.pdf" download class="button">Baixar Currículo</a>
+    <main>
+
+        <section id="about">
+            <h2>Sobre Mim</h2>
+            <div class="about-container">
+                <img src="/img/airton.jpeg" alt="Airton" class="about-image">
+                <div class="about-info">
+                    <p>Olá! Meu nome é Airton. Atualmente, estou estudando Informática para Internet no Instituto Federal de Alagoas, onde também trabalho com DTI na reitoria.</p>
+                    <p>Tenho uma grande paixão por desenvolvimento web e backend. As tecnologias que utilizo incluem:</p>
+                    <ul class="skills">
+                        <li>JavaScript <i class="devicon-javascript-plain colored"></i></li>
+                        <li>React Native <i class="devicon-react-original colored"></i></li>
+                        <li>Node.js <i class="devicon-nodejs-plain colored"></i></li>
+                        <li>HTML <i class="devicon-html5-plain colored"></i></li>
+                        <li>CSS <i class="devicon-css3-plain colored"></i></li>
+                    </ul>
+
+                    <!-- Timeline -->
+                    <h3 class="titulo-timeline">Minha Trajetória</h3>
+                    <ul class="timeline">
+                        <li><strong>2019:</strong> Início dos estudos em Informática para Internet</li>
+                        <li><strong>2021:</strong> Primeiros desenvolvimentos com progamação web</li>
+                        <li><strong>2023:</strong> Iniciando no Instituto federal com Informática para internet</li>
+                        <li><strong>2024:</strong>  Estágio DTI & Projetos próprios em React Native e Node.js</li>
+                    </ul>
+
+                    <!-- Interesses/Hobbies -->
+                    <h3 class="titulo-timeline">Interesses</h3>
+                    <div class="interests">
+                        <span>Programação</span>
+                        <span>Tecnologia</span>
+                        <span>Games</span>
+                        <span>Estudos</span>
+                    </div>
+
+                    <!-- Tecnologias Aprendendo -->
+                    <h3 class="titulo-timeline">Atualmente Aprendendo</h3>
+                    <ul class="skills-learning">
+                        <li>Desenvolvimento Mobile</li>
+                        <li>C#</li>
+                        <li>React Avançado</li>
+                    </ul>
+
+                    <a href="/donwloads/Currículo Airton José dos Santos.pdf" download class="button">Baixar Currículo</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" style="display:none;">
+        <h2>O que eu faço</h2>
+        <div class="services-container">
+            <div class="service">
+            <i class="devicon-react-original colored"></i>
+            <h3>Front-end</h3>
+            <p>Desenvolvimento de interfaces modernas e responsivas usando React e JavaScript.</p>
+            </div>
+            <div class="service">
+            <i class="devicon-nodejs-plain colored"></i>
+            <h3>Back-end</h3>
+            <p>APIs rápidas e seguras com Node.js e integração com bancos de dados.</p>
+            </div>
+            <div class="service">
+            <i class="devicon-docker-plain colored"></i>
+            <h3>DevOps Básico</h3>
+            <p>Deploy em servidores e uso de Docker para ambientes de desenvolvimento.</p>
             </div>
         </div>
     </section>
 
-    <section id="projects">
+    <section id="projects" style="display:none;">
         <h2>Projetos</h2>
         <div class="project-container">
             <div class="project">
@@ -62,7 +113,7 @@
         </div>
     </section>
 
-    <section id="contact">
+    <section id="contact" style="display:none;">
         <h2>Contato</h2>
         <div class="contact-container">
             <div class="contact-item">
@@ -80,8 +131,13 @@
         </div>
     </section>
 
+    </main>
+
     <footer>
         <p>&copy; 2024 Airton. Todos os direitos reservados.</p>
     </footer>
+
+
+    <script src="script.js"></script>
 </body>
 </html>
