@@ -1,3 +1,8 @@
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-8S7C1HMNSB');
+
 document.addEventListener("DOMContentLoaded", () => {
   const links = document.querySelectorAll("nav a");
   const sections = document.querySelectorAll("section");
