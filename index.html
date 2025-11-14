@@ -1,236 +1,435 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfólio de Airton - Desenvolvedor Web e Backend com experiência em JavaScript, React Native, Node.js, HTML e CSS.">
-    <title>Portfólio de Airton</title>
+    <title>Airton Santos</title>
+    <link rel="icon" type="image/png" href="/assets/icon.jpeg">
     <link rel="stylesheet" href="styles.css">
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8S7C1HMNSB"></script>
-    <!--Links-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
-    <script src="https://kit.fontawesome.com/seu-kit.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-    <link rel="shortcut icon" href="/img/do-utilizador.png" type="image/x-icon">
 </head>
 <body>
-    <header>
-        <h1>Portfólio</h1>
-        <nav>
-            <ul>
-                <li><a href="#" data-section="about">Sobre Mim</a></li>
-                <li><a href="#" data-section="services">Serviços</a></li>
-                <li><a href="#" data-section="projects">Projetos</a></li>
-                <li><a href="#" data-section="contact">Contato</a></li>
+
+    <!--Barra de navegação-->
+    <header id="navgationBar"> 
+        <nav class="nav-container animation-scroll slide-in-top">
+
+            <!--Destaque da logotipo-->
+            <div>
+                Airton<span class="logo-destacada">-Dev</span> 
+            </div>
+
+            <ul class="novo-menu" id="navgation-menu">
+                <li><a href="#home" class="navgation-link active">Home</a></li>
+                <li><a href="#about" class="navgation-link">About</a></li>
+                <li><a href="#projects" class="navgation-link">Projects</a></li>
+                <li><a href="#contact" class="navgation-link">Contact</a></li>
             </ul>
+
+            <!--Navgation Social-->
+            <div class="navgation-social">
+                <!--=============================================================================================================================================-->
+                <a href="https://github.com/Airton-Santos" aria-label="GitHub" target="_blank" class="icon-social">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                </a>
+                <!--=============================================================================================================================================-->
+                <a href="https://www.instagram.com/godbagrezin?igsh=aTh4YjA5Mmh0OG9j" aria-label="Instagram" target="_blank" class="icon-social">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5zm4.25 4a5.25 5.25 0 1 1 0 10.5 5.25 5.25 0 0 1 0-10.5zm0 1.5a3.75 3.75 0 1 0 0 7.5 3.75 3.75 0 0 0 0-7.5zm5.5-.75a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                    </svg>
+                </a>
+                <!--=============================================================================================================================================-->
+                <a href="https://www.linkedin.com/in/airton-santos-7913162a0/" aria-label="Linkedin" class="icon-social" target="_blank" rel="noopener noreferrer">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 23.5h4V7.98h-4V23.5zm7.98-15.52h3.83v2.13h.05c.53-1 1.83-2.13 3.77-2.13 4.03 0 4.78 2.65 4.78 6.1v7.42h-4V15c0-2.18-.04-4.98-3.04-4.98-3.04 0-3.51 2.37-3.51 4.82v8.66h-4V7.98z"/>
+                    </svg>
+                </a>
+                <!--=============================================================================================================================================-->
+            </div>
+
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </nav>
     </header>
 
     <main>
+        <!--Sections-->>
+        <section id="home" class="hexon">
+            <div class="container">
+                <div class="hexon-content">
 
-        <section id="about">
-            <h2>Sobre Mim</h2>
-            <div class="about-container">
-                <img src="/img/airton.jpeg" alt="Airton" class="about-image">
-                <div class="about-info">
-                    <p>Olá! Meu nome é Airton. Atualmente, estou estudando Informática para Internet no Instituto Federal de Alagoas, onde também trabalho com DTI na reitoria.</p>
-                    <p>Tenho uma grande paixão por desenvolvimento web e backend. As tecnologias que utilizo incluem:</p>
-                    <ul class="skills">
-                        <li>JavaScript <i class="devicon-javascript-plain colored"></i></li>
-                        <li>React Native <i class="devicon-react-original colored"></i></li>
-                        <li>Node.js <i class="devicon-nodejs-plain colored"></i></li>
-                        <li>HTML <i class="devicon-html5-plain colored"></i></li>
-                        <li>CSS <i class="devicon-css3-plain colored"></i></li>
-                    </ul>
+                    <!-- TEXTO ESQUERDA -->
+                    <div class="hexon-text">
+                        <p class="greeting">Hello, I'm Airton Santos 👋</p>
 
-                    <!-- Timeline -->
-                    <h3 class="titulo-timeline">Minha Trajetória</h3>
-                    <ul class="timeline">
-                        <li><strong>2019:</strong> Início dos estudos em Informática para Internet</li>
-                        <li><strong>2021:</strong> Primeiros desenvolvimentos com progamação web</li>
-                        <li><strong>2023:</strong> Iniciando no Instituto federal com Informática para internet</li>
-                        <li><strong>2024:</strong>  Estágio DTI & Projetos próprios em React Native e Node.js</li>
-                    </ul>
+                        <h1 class="hexon-title">
+                            <span id="typing-text">Software Engineering</span>
+                            <span class="cursor">|</span>
+                        </h1>
 
-                    <!-- Interesses/Hobbies -->
-                    <h3 class="titulo-timeline">Interesses</h3>
-                    <div class="interests">
-                        <span>Programação</span>
-                        <span>Tecnologia</span>
-                        <span>Games</span>
-                        <span>Estudos</span>
+                        <p class="hexon-quote">Learning, evolving, and finding new ways to bring ideas to life.</p>
+
+                        <div class="hexon-buttons">
+                            <a href="/downloads/Currículo Airton José dos Santos Para TI.pdf"><button class="glow-cv-button">Download CV</button></a>
+                        </div>
+
+                        <!-- SOCIAL -->
+                        <div class="hexon-social">
+                            <a href="https://www.linkedin.com/in/airton-santos-7913162a0/" class="social-link" aria-label="LinkedIn" target="_blank">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                                </svg>
+                            </a>
+
+                            <a href="https://www.instagram.com/godbagrezin?igsh=aTh4YjA5Mmh0OG9j" class="social-link" aria-label="Instagram" target="_blank">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5zm4.25 4a5.25 5.25 0 1 1 0 10.5 5.25 5.25 0 0 1 0-10.5zm0 1.5a3.75 3.75 0 1 0 0 7.5 3.75 3.75 0 0 0 0-7.5zm5.5-.75a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                                </svg>
+                            </a>
+
+                            <a href="https://wa.me/+5582987100763" class="social-link" aria-label="WhatsApp" target="_blank">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347"/>
+                                </svg>
+                            </a>
+
+                            <a href="https://github.com/Airton-Santos" class="social-link" aria-label="GitHub" target="_blank">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                            </a>
+                        </div>
                     </div>
 
-                    <!-- Tecnologias Aprendendo -->
-                    <h3 class="titulo-timeline">Atualmente Aprendendo</h3>
-                    <ul class="skills-learning">
-                        <li>Desenvolvimento Mobile</li>
-                        <li>C#</li>
-                        <li>React Avançado</li>
-                    </ul>
+                    <!-- VISUAL DIREITA -->
+                    <div class="hexon-visual">
+                        <div class="avatar-container">
 
-                    <a href="/donwloads/Currículo Airton José dos Santos.pdf" download class="button">Baixar Currículo</a>
+                            <div class="sun-core">
+                                <img src="/assets/airton.jpeg" alt="Airton Santos Avatar">
+                            </div>
+
+                            <button class="orbit-icon html random-orbit">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg">
+                            </button>
+
+                            <button class="orbit-icon css random-orbit">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg">
+                            </button>
+
+                            <button class="orbit-icon js random-orbit">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg">
+                            </button>
+
+                            <button class="orbit-icon react random-orbit">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg">
+                            </button>
+
+                            <button class="orbit-icon nodejs random-orbit">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg">
+                            </button>
+
+                            <button class="orbit-icon git random-orbit">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg">
+                            </button>
+
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </section>
 
-        <section id="services" style="display:none;">
-            <h2>O que eu faço?</h2>
-
-            <p style="text-align:center; margin-bottom: 2rem;">
-                Meu objetivo é criar soluções completas e funcionais, unindo design moderno, desempenho e escalabilidade para cada projeto.
-            </p>
-
-            <div class="services-container">
-                <div class="service">
-                    <i class="devicon-react-original colored"></i>
-                    <h3>Front-end</h3>
-                    <p>Desenvolvimento de interfaces modernas e responsivas usando React, TypeScript e JavaScript.</p>
-                </div>
-
-                <div class="service">
-                    <i class="devicon-nodejs-plain colored"></i>
-                    <h3>Back-end</h3>
-                    <p>APIs rápidas e seguras com Node.js e integração com bancos de dados, incluindo Firebase.</p>
-                </div>
-
-                <div class="service">
-                    <i class="devicon-firebase-plain colored"></i>
-                    <h3>Firebase & Banco de Dados</h3>
-                    <p>Integração com Firebase para autenticação, banco de dados e deploy de aplicações web.</p>
-                </div>
-
-                <div class="service">
-                    <i class="devicon-html5-plain colored"></i>
-                    <h3>Websites e Landing Pages</h3>
-                    <p>Criação de sites, landing pages e portfólios totalmente responsivos e funcionais.</p>
-                </div>
-
-                <div class="service">
-                    <i class="fas fa-tools" style="font-size:3rem; color:#bb86fc;"></i>
-                    <h3>Manutenção de Computadores</h3>
-                    <p>Serviços de manutenção, formatação e otimização de computadores para melhorar desempenho e segurança.</p>
-                </div>
-
-                <div class="service">
-                    <i class="fas fa-image" style="font-size:3rem; color:#bb86fc;"></i>
-                    <h3>Edição de Fotos e Vídeos</h3>
-                    <p>Criação e edição de conteúdos visuais usando Adobe Photoshop e Adobe After Effects para projetos profissionais.</p>
-                </div>
-            </div>
-
-            <div style="margin-top: 3rem; text-align:center; line-height: 1.5;">
-                <p>Trabalho com dedicação e foco em resultados para que cada projeto seja único e funcional.</p>
-                <p>Meu objetivo é fornecer soluções confiáveis, escaláveis e fáceis de usar, garantindo sempre a melhor experiência para o usuário.</p>
-                <p>Seja um site profissional, uma landing page ou manutenção de sistemas e computadores, estou pronto para ajudar.</p>
-            </div>
-        </section>
+        <!--=============================================================================================================================================-->
 
 
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
 
-        <section id="projects" style="display:none;">
-            <h2>Projetos</h2>
-            <p style="text-align:center; margin-bottom:2rem;">
-                Alguns dos projetos que já desenvolvi, incluindo sites, landing pages e aplicações web.
-            </p>
-            <div class="project-container">
-                <!-- Projeto real -->
-                <div class="project">
-                    <img src="/img/Projetos.gif" alt="Descrição do Projeto">
-                    <div class="project-info">
-                        <h3>Portfólio</h3>
-                        <p>Um site pessoal mostrando meus trabalhos e habilidades.</p>
-                        <button class="button" onclick="window.location.href='https://github.com/Airton-Santos?tab=repositories'">Ver Projetos</button>
+                    <div class="about-text slide-in-left">
+                        <p>
+                            I'm Airton, a Computer Engineering student passionate about technology and innovation. 
+                            I explore different areas of development — from software and web applications to intelligent 
+                            systems and automated solutions. My goal is to continue improving my skills, expanding my 
+                            knowledge, and creating meaningful projects that make a real impact.
+                        </p>
+
+                        <div class="skills">
+                            <h3>Skills & Technologies</h3>
+                            <div class="skills-grid">
+                                <span class="skill-tag">HTML5</span>
+                                <span class="skill-tag">CSS3</span>
+                                <span class="skill-tag">JavaScript</span>
+                                <span class="skill-tag">React</span>
+                                <span class="skill-tag">Node.js</span>
+                                <span class="skill-tag">Git</span>
+                                <span class="skill-tag">Responsive Design</span>
+                                <span class="skill-tag">UI/UX</span>
+                            </div>
+                        </div>
                     </div>
-                </div>
 
-                <!-- Projeto placeholder 1 -->
-                <div class="project">
-                    <img src="/img/pingpongGame.png" alt="Projeto em desenvolvimento">
-                    <div class="project-info">
-                        <h3>Ping Pong Game</h3>
-                        <p>Jogo de Ping pong criado no navegador com html, css e JavaScript.</p>
-                        <button class="button" onclick="window.location.href='https://github.com/Airton-Santos/PingPongGame'">Ver Projeto</button>
+                    <div class="about-visual slide-in-right">
+                        <div class="code-animation">
+                            <div class="code-line">const developer = {</div>
+                            <div class="code-line indent">name: 'Airton Santos',</div>
+                            <div class="code-line indent">role: 'Computer Engineering Student',</div>
+                            <div class="code-line indent">passion: 'Building projects and exploring new ways to innovate'</div>
+                            <div class="code-line">};</div>
+                        </div>
                     </div>
-                </div>
 
-                <!-- Projeto placeholder 2 -->
-                <div class="project">
-                    <img src="/img/iconFocusFlow.png" alt="Projeto em desenvolvimento">
-                    <div class="project-info">
-                        <h3>Focus Flow</h3>
-                        <p>Aplicação com Node.js e integração com Firebase(um aplicativo de gereciamento de tarefas).</p>
-                        <button class="button" onclick="window.location.href='https://github.com/Airton-Santos/FocusFLow3.0'">Ver Projeto</button>
-                    </div>
-                </div>
-
-                <!-- Projeto placeholder 3 -->
-                <div class="project">
-                    <img src="/img/javaicone.png" alt="Projeto em desenvolvimento">
-                    <div class="project-info">
-                        <h3>Projetos Em java</h3>
-                        <p>Projetos pequenos e simples feito em java.</p>
-                        <button class="button" onclick="window.location.href='https://github.com/Airton-Santos/Projetos--JAVA-'">Ver Projeto</button>
-                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="contact" style="display:none;">
-            <h2>Contato</h2>
+        <section id="projects" class="section">
+            <div class="container">
+                <h2 class="section-title">My Projects</h2>
 
-            <p style="text-align:center; margin-bottom:2rem;">
-                Estou sempre aberto a novos projetos, parcerias ou apenas bater um papo sobre tecnologia e design. Sinta-se à vontade para me contatar!
-            </p>
+                <div class="projects-grid slide-in-up">
 
-            <div class="contact-container" style="display:flex; flex-wrap:wrap; justify-content:center; gap:1rem;">
+                    <!-- Project 1 -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="/assets/p1.jpeg" alt="Project 1">
+                        </div>
+                        <div class="project-content">
+                            <h3>RPG System & Discord Bot</h3>
+                            <p>
+                                A complete RPG system integrated with a Discord bot, including player progression, 
+                                stats, inventory, economy and match mechanics. Built with modular and scalable architecture.
+                            </p>
+                            <div class="project-tech">
+                                <span>Node.js</span>
+                                <span>Express</span>
+                                <span>MongoDB</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Airton-Santos/bluelock-bot" class="project-link">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
 
-                <div class="contact-card">
-                    <i class="fab fa-github"></i>
-                    <h3>GitHub</h3>
-                    <p>Confira meus projetos e contribuições.</p>
-                    <button class="button" onclick="window.open('https://github.com/Airton-Santos', '_blank')">Acessar</button>
+                    <!-- Project 2 -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="/assets/p2.png" alt="Project 2">
+                        </div>
+                        <div class="project-content">
+                            <h3>Personal Portfolio</h3>
+                            <p>
+                                A modern and interactive portfolio website designed with animations and responsive layout. 
+                                Built to highlight projects, skills, and experience.
+                            </p>
+                            <div class="project-tech">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Airton-Santos/Portfolio" class="project-link">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 – Focus Flow -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="/assets/p3.png" alt="Focus Flow App">
+                        </div>
+                        <div class="project-content">
+                            <h3>Focus Flow – Task Manager App</h3>
+                            <p>
+                                A productivity app developed as the final project at Instituto Federal de Alagoas. 
+                                Features consistent UI, color standards, responsive layout tests, and intuitive task 
+                                organization.
+                            </p>
+                            <div class="project-tech">
+                                <span>React Native</span>
+                                <span>Expo</span>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Airton-Santos/FocusFLow3.0" class="project-link">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4 – Godot Game -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="/assets/p4.gif" alt="Godot 2D Game">
+                        </div>
+                        <div class="project-content">
+                            <h3>2D Platform Game – Godot Engine</h3>
+                            <p>
+                                A 2D game built in Godot Engine with animations, player movement, UI menus, 
+                                and visual identity designed from scratch. Still in development.
+                            </p>
+                            <div class="project-tech">
+                                <span>Godot</span>
+                                <span>GDScript</span>
+                                <span>Pixel Art</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Airton-Santos/Sunshine" class="project-link">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 5 – Ping Pong Web Game -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="/assets/p5.png" alt="Ping Pong Web Game">
+                        </div>
+                        <div class="project-content">
+                            <h3>Ping Pong Web Game</h3>
+                            <p>
+                                A simple and fun browser-based ping pong game. Smooth physics, clean interface, 
+                                and responsive controls. Available on GitHub.
+                            </p>
+                            <div class="project-tech">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Airton-Santos/PingPongGame" class="project-link">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
-
-                <div class="contact-card">
-                    <i class="fas fa-envelope"></i>
-                    <h3>E-mail</h3>
-                    <p>Envie uma mensagem para discutirmos ideias.</p>
-                    <button class="button" onclick="window.location.href='mailto:santosairton31508@gmail.com'">Enviar E-mail</button>
-                </div>
-
-                <div class="contact-card">
-                    <i class="fab fa-whatsapp"></i>
-                    <h3>WhatsApp</h3>
-                    <p>Chame no WhatsApp para contato rápido.</p>
-                    <button class="button" onclick="window.open('https://wa.me/5582987100763', '_blank')">Abrir WhatsApp</button>
-                </div>
-
-                <div class="contact-card">
-                    <i class="fas fa-phone"></i>
-                    <h3>Telefone</h3>
-                    <p>Entre em contato direto por ligação.</p>
-                    <button class="button" onclick="window.location.href='tel:+5582987100763'">Ligar</button>
-                </div>
-
             </div>
-
-            <p style="text-align:center; margin-top:2rem;">
-                📍 Maceió, Alagoas, Brasil
-            </p>
         </section>
 
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
 
+                <div class="contact-content">
+                    <div class="contact-info slide-in-left">
+                        <p>
+                            Let's connect! I'm always open to discussing new ideas, tech projects, collaborations,
+                            and opportunities to grow as a Computer Engineering student and developer.
+                        </p>
 
+                        <div class="contact-details">
+
+                            <!-- Email -->
+                            <div class="contact-item">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                                </svg>
+                                <span>santosairton31508@gmail.com</span>
+                            </div>
+
+                            <!-- Phone -->
+                            <div class="contact-item">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M6.62 10.79c1.44 2.83 3.76 5.15 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                                </svg>
+                                <span>+55 (82) 987100763</span>
+                            </div>
+
+                            <!-- Location -->
+                            <div class="contact-item">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                                </svg>
+                                <span>Brazil, Alagoas</span>
+                            </div>
+                        </div>
+
+                        <!-- Social Links -->
+                        <div class="social-links">
+
+                            <!-- GitHub -->
+                            <a href="#" class="social-link" aria-label="GitHub" target="_blank">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 
+                                    0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234
+                                    c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756
+                                    -1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237
+                                    1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604
+                                    -2.665-.305-5.467-1.334-5.467-5.931 
+                                    0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 
+                                    0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 
+                                    1.02.005 2.047.138 3.006.404 
+                                    2.291-1.552 3.297-1.23 3.297-1.23 
+                                    .653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 
+                                    0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293
+                                    c0 .319.192.694.801.576 
+                                    4.765-1.589 8.199-6.086 8.199-11.386 
+                                    0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                            </a>
+
+                            <!-- LinkedIn -->
+                            <a href="https://www.linkedin.com" class="social-link" aria-label="LinkedIn" target="_blank">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M20.447 20.452h-3.554v-5.569
+                                    c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046
+                                    c.477-.9 1.637-1.85 3.37-1.85 
+                                    3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433
+                                    c-1.144 0-2.063-.926-2.063-2.065 
+                                    0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 
+                                    0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452z"/>
+                                </svg>
+                            </a>
+
+                            <!-- WhatsApp -->
+                            <a href="https://wa.me/55xxxxxxxxxx" class="social-link" aria-label="WhatsApp" target="_blank">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967
+                                    -.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075
+                                    -.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059
+                                    -.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52
+                                    .149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52
+                                    -.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51
+                                    -.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 
+                                    0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487
+                                    .709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 
+                                    1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413
+                                    -.074-.124-.272-.198-.57-.347"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="contact-form slide-in-right">
+                        <form id="contact-form">
+                            <div class="form-group">
+                                <input type="text" placeholder="Your Name" required name="user_name">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" placeholder="Your Email" required name="user_email">
+                            </div>
+                            <div class="form-group">
+                                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="glow-cv-button">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <footer>
-        <p>&copy; 2024 Airton. Todos os direitos reservados.</p>
-    </footer>
-
-
     <script src="script.js"></script>
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        (function(){
+            emailjs.init("YOUR_PUBLIC_KEY"); 
+        })();
+    </script>
 </body>
 </html>
